@@ -2,14 +2,14 @@
 
 
 import './App.css';
-import Navbar from './Components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import {  Routes, Route, Navigate} from 'react-router-dom';
-import Home from './Components/Pages/Home';
-import Admission from './Components/Pages/Admission'
-import Faculty from './Components/Pages/Faculty'
-import Eca from './Components/Pages/Eca'
-import SignUp from './Components/Pages/Signup'
-import Notice from './Components/Pages/Notice';
+import Home from './components/Pages/Home';
+import Admission from './components/Pages/Admission'
+import Faculty from './components/Pages/Faculty'
+import Eca from './components/Pages/Eca'
+import SignUp from './components/Pages/Signup'
+import Notice from './components/Pages/Notice';
 
 function App() {
   return (
