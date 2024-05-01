@@ -24,3 +24,13 @@ const Faculty = () => {
 <div className='   max-h-[1000px] mt-[180px] '>
 <span className='text-blue-800 font-bold text-2xl'>Our Team</span>
       <div className="h-[3px] w-[80px] bg-blue-800  ml-[230px] mt-[-18px]"></div>
+
+      {/* image halanw parni item is down below just given background and sizing  */}
+      <div className=" h-[400px] w-[1200px] bg-current ml-[90px] mt-[50px] "></div>
+   <div className='  ml-[120px] mt-[50px]'>
+  <p className='flex-col text-black  w-[1200px]   pt-8'>
+  Our school team members are the driving force behind our collective success, working collaboratively to create a positive and enriching environment for all. Comprising teachers, administrators, support staff, and volunteers, our team is united by a shared commitment to the well-being and growth of every student.
+  </p>
+  <p className='flex-col text-black  w-[1200px]   pt-10'>
+  Whether in the classroom, on the sports field, or in the community, our team members exemplify dedication, creativity, and compassion. Together, we celebrate diversity, foster inclusivity, and cultivate a culture of respect and teamwork. With each member bringing their unique skills and perspectives to the table, our team is stronger and more resilient, empowering each other and our students to reach new heights of achievement and fulfillment.
+  </p>
