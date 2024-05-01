@@ -19,3 +19,8 @@ const Faculty = () => {
      <div className="relative h-[400px] w-[250px] bg-blue-800 mr-[-20px] mt-[-80px] z-0"></div>
 
 </div>
+
+
+<div className='   max-h-[1000px] mt-[180px] '>
+<span className='text-blue-800 font-bold text-2xl'>Our Team</span>
+      <div className="h-[3px] w-[80px] bg-blue-800  ml-[230px] mt-[-18px]"></div>
