@@ -34,3 +34,15 @@ const Faculty = () => {
   <p className='flex-col text-black  w-[1200px]   pt-10'>
   Whether in the classroom, on the sports field, or in the community, our team members exemplify dedication, creativity, and compassion. Together, we celebrate diversity, foster inclusivity, and cultivate a culture of respect and teamwork. With each member bringing their unique skills and perspectives to the table, our team is stronger and more resilient, empowering each other and our students to reach new heights of achievement and fulfillment.
   </p>
+
+  </div>
+
+
+</div>
+
+<div className='relative h-[600px] w-full bg-blue-950 mt-[50px]'>
+
+  <div className='absolute flex flex-col items-center justify-center ml-[350px] mt-[50px]'>
+  <div className="h-[3px] w-[80px] bg-white mr-[-120px] ml-[150px]"></div>
+<span className='text-white font-bold ml-[160px] text-2xl'>FOUNDERS</span>
+      <div className="h-[3px] w-[80px] bg-white  ml-[30px] "></div>
