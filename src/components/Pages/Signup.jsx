@@ -1,9 +1,1 @@
-import React from 'react'
-
-const SignUp = () => {
-  return (
-    <div>Signup</div>
-  )
-}
-
-export default SignUp
+// this is the page for about us 
