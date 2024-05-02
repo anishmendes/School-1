@@ -33,6 +33,18 @@ const Facilities = () => {
 The school library: a sanctuary of knowledge where curiosity finds its compass and minds embark on endless journeys through the realms of literature.
 </p>
 
+
+<p className='flex-col text-blue-900 w-[400px] font-bold pt-[80px] text-2xl '>Canteen</p>
+
+<div className='pt-12 flex gap-[100px] justify-center '>
+      <img className='w-[548px] h-[524px] max-sm:w-[500px] rounded-lg py-2' src={canteen} alt="" />
+      <img className='w-[548px] max-sm:w-[500px] rounded-lg py-2' src={canteen} alt="" />
+      </div>
+
+      <p className='text-blue-900 text-2xl pt-12 mb-4 ml-[170px] ' style={{ maxWidth: '1180px', wordWrap: 'break-word' }}>
+      The school cafeteria: a busy place where students eat, chat, and make friends while enjoying tasty food smells.
+   </p> 
+
       </div>
   )
 }
