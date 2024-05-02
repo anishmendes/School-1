@@ -45,6 +45,9 @@ The school library: a sanctuary of knowledge where curiosity finds its compass a
       The school cafeteria: a busy place where students eat, chat, and make friends while enjoying tasty food smells.
    </p> 
 
+
+   
+
       </div>
   )
 }
