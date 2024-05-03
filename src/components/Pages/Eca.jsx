@@ -1,83 +1,161 @@
 import React from 'react'
-import school2 from '../../assets/school1.jpg'
 
-const Faculty = () => {
+const Eca = () => {
   return (
-    
-    <div className='container mx-auto pt-10'>
-      
-      
-      <div className='flex-col relative  top-14 max-h-[400px] '>
-      <span className='text-blue-800 font-bold text-2xl'>Our  Community</span>
-      <div className="h-[3px] w-[80px] bg-blue-800  ml-[230px] mt-[-18px]"></div>
-      <p className='flex-col text-black  w-[400px] font-bold pt-8 '>The faculty at Antarikshya strives to cultivate a nurturing environment for all learners. The dedicated faculty members of our school are the backbone of our educational community, bringing passion, expertise, and innovation to the classroom every day. With their unwavering commitment to student success, they create engaging learning environments that inspire curiosity, critical thinking, and lifelong learning.</p>
-
+    <div className='container pt-10 overflow-hidden'>
+    <div className='flex-col relative top-14 max-h-[400px] '>
+        <span className='text-black font-bold text-2xl'>Extra Curricular Activities</span><br></br>
         </div>
 
-        <div className='flex flex-col items-end mt-[-200px]'>
-        <img className='absolute h-[400px] w-[400px] rounded-lg mt-[-30px] mr-[200px] z-10' src={school2} alt="" />
-     <div className="relative h-[400px] w-[250px] bg-blue-800 mr-[-20px] mt-[-80px] z-0"></div>
-
-</div>
-
-
-<div className='   max-h-[1000px] mt-[180px] '>
-<span className='text-blue-800 font-bold text-2xl'>Our Team</span>
-      <div className="h-[3px] w-[80px] bg-blue-800  ml-[230px] mt-[-18px]"></div>
-
-
-{/* image halanw parni item is down below just given background and sizing  */}
-      <div className=" h-[400px] w-[1200px] bg-current ml-[90px] mt-[50px] "></div>
-   <div className='  ml-[120px] mt-[50px]'>
-  <p className='flex-col text-black  w-[1200px]   pt-8'>
-  Our school team members are the driving force behind our collective success, working collaboratively to create a positive and enriching environment for all. Comprising teachers, administrators, support staff, and volunteers, our team is united by a shared commitment to the well-being and growth of every student.
-  </p>
-  <p className='flex-col text-black  w-[1200px]   pt-10'>
-  Whether in the classroom, on the sports field, or in the community, our team members exemplify dedication, creativity, and compassion. Together, we celebrate diversity, foster inclusivity, and cultivate a culture of respect and teamwork. With each member bringing their unique skills and perspectives to the table, our team is stronger and more resilient, empowering each other and our students to reach new heights of achievement and fulfillment.
-  </p>
-   </div>
-
-
-</div>
-
-<div className='relative h-[600px] w-full bg-blue-950 mt-[50px]'>
-
-  <div className='absolute flex flex-col items-center justify-center ml-[350px] mt-[50px]'>
-  <div className="h-[3px] w-[80px] bg-white mr-[-120px] ml-[150px]"></div>
-<span className='text-white font-bold ml-[160px] text-2xl'>FOUNDERS</span>
-      <div className="h-[3px] w-[80px] bg-white  ml-[30px] "></div>
-
-
-      <p className='flex items-center justify-center font-bold text-xl text-white mt-[100px] mr-[300px]'>Antarikshya School was founded by Mr. Ram Shrestha and Ms. Sita Pathak in 1998</p>
-       
-
-      <div className="flex justify-between space-x-[150px] mr-[300px]">
-  <div className="w-[200px] h-[200px] rounded-full bg-gray-300"></div>
-  <div className="w-[200px] h-[200px] rounded-full bg-gray-300"></div>
-</div>
-
-<div className="flex justify-between space-x-[150px] pt-8 mr-[300px]">
-
-  <div className='w-[352px] h-[98px] bg-gray-300 mr-[80px]'></div>
-  <div className='w-[352px] h-[98px] bg-gray-300 mr-[80px]'></div>
-</div>
-
-
-
-
-
+        {/* Part 1 */}
+      <div className="h-screen w-full pt-24">
+    <div className="flex justify-between h-full gap-6">
+      <div className="w-1/2 h-[800px] relative overflow-hidden">
+        <img
+           src="https://via.placeholder.com/600x400"
+          alt="Image 1"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+        />
+      </div>
+      <div className="w-1/3 flex flex-col gap-6">
+        <div className="h-1/2 relative top-20 overflow-hidden">
+          <img
+             src="https://via.placeholder.com/600x500"
+            alt="Image 2"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div className="h-1/2 relative top-20 overflow-hidden">
+          <img
+             src="https://via.placeholder.com/600x400"
+            alt="Image 3"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+      </div>
+      <div className="w-1/2 h-[800px] relative  overflow-hidden">
+        <img
+           src="https://via.placeholder.com/600x400"
+          alt="Image 4"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+        />
+      </div>
+    </div>
   </div>
 
-  
+{/* part 2 */}
 
-</div>
-
-
-
-
-
+  <div className="h-screen w-full pt-24 mt-60">
+    <div className="flex justify-between h-full gap-6">
+      <div className="w-1/3 h-[800px] relative overflow-hidden">
+        <img
+           src="https://via.placeholder.com/600x400"
+          alt="Image 1"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+        />
+      </div>
+      <div className="w-1/3 flex flex-col gap-6 ">
+        <div className="h-1/2 relative top-20 overflow-hidden">
+          <img
+             src="https://via.placeholder.com/600x400"
+            alt="Image 2"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+        <div className="h-1/2 relative top-20 overflow-hidden">
+          <img
+             src="https://via.placeholder.com/600x400"
+            alt="Image 3"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        </div>
+      </div>
+      <div className="w-1/3 h-[800px] relative overflow-hidden">
+        <img
+           src="https://via.placeholder.com/600x400"
+          alt="Image 4"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+        />
+      </div>
     </div>
+  </div>
+
+
+  {/* Crad  */}
+  <div className='flex-col relative  left-8 pt-20 mt-60  max-h-[400px] '>
+        <span className='text-black font-bold text-2xl'>Extra Curricular Activities</span><br></br>
+        </div>
+  <div className="w-full h-[70vh] flex justify-center text-[#162545]  items-center">
+    <div className="w-1/2 p-4">
+      <div className="relative">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Image 1"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+        <div className="absolute bottom-0 left-0 w-full p-4 bg-white rounded-b-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+          <h2 className="text-lg font-bold mb-2">Arts Club</h2>
+          <p className="border border-gray-300 rounded-md p-2">
+          The Club collaboratively engages in diverse forms of artistic expression, encompassing presentation and creative displays. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="w-1/2 p-4">
+      <div className="relative">
+        <img
+         src="https://via.placeholder.com/600x400"
+          alt="Image 2"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+
+        <div className="absolute bottom-0 left-0 w-full p-4 bg-white rounded-b-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+          <h2 className="text-lg font-bold mb-2"> Research Club</h2>
+          <p className="border border-gray-300 rounded-md p-2">
+          This club is closely linked with the science stream, fostering an environment where students are motivated to showcase their creativity through events.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div className="w-full mt-40 h-[70vh] flex text-[#162545] justify-center items-center relative bottom-20">
+    <div className="w-1/2 p-4">
+      <div className="relative">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Image 1"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+        <div className="absolute bottom-0 left-0 w-full p-4 bg-white rounded-b-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+          <h2 className="text-lg font-bold mb-2">Sports Club</h2>
+          <p className="border border-gray-300 rounded-md p-2">
+          The Club collaboratively engages in diverse forms of artistic expression, encompassing presentation and creative displays. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="w-1/2 p-4">
+      <div className="relative">
+        <img
+         src="https://via.placeholder.com/600x400"
+          alt="Image 2"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+        <div className="absolute bottom-0 left-0 w-full p-4 bg-white rounded-b-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+          <h2 className="text-lg font-bold mb-2">Sports Club</h2>
+          <p className="border border-gray-300 rounded-md p-2">
+          This club is closely linked with the science stream, fostering an environment where students are motivated to showcase their creativity through events.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
   )
 }
 
-export default Faculty
+export default Eca
