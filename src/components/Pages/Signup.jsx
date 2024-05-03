@@ -1,161 +1,146 @@
-// this is the page for about us 
-
-import bus from '../../assets/bus.png'
-import Library1 from '../../assets/Library1.png'
-import Library2 from '../../assets/Library2.png'
-import canteen from '../../assets/canteen.png'
-import Lab1 from "../../assets/Lab1.png"
-import Lab2 from "../../assets/Lab2.png"
-
-import React, { useEffect, useState } from 'react';
-// Import Swiper React components
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Import Swiper's CSS
-
-// import required modules
-import {  EffectCoverflow, Pagination } from 'swiper/modules';
-
+import React from 'react'
 
 const SignUp = () => {
-
-  const [slidesPerView, setSlidesPerView] = useState(window.innerWidth >= 768 ? 2 : 1);
-  
-  useEffect(() => {
-    const handleResize = () => {
-      setSlidesPerView(window.innerWidth >= 768 ? 2 : 1);
-    };
-  
-    window.addEventListener('resize', handleResize);
-  
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
-
-    
-    <div className='container mx-auto pt-2'>
-      <div className='relative h-[200px] w-full bg-blue-950'>
-      <div className='absolute flex flex-col items-center justify-center text-7xl text-white font-bold ml-[350px] mt-[50px]'>
-      Annapurna Vidhya  Mandir
-        </div>
-       
-
-      </div>
-        <p className='text-blue-900 text-xl font-bold  pt-12 mb-4 ml-[150px] ' style={{ maxWidth: '1220px', wordWrap: 'break-word' }}>
-     
-        Welcome to Annapurna Vidhya Mandir School, where excellence in education meets holistic development. Established with a vision to nurture young minds and empower them to become confident, compassionate, and responsible global citizens, Annapurna Vidhya Mandir School has been a beacon of academic excellence and character development for [number] years.
-<span className="pt-4" style={{ display: 'block', width: '50%' }}></span>
-At Annapurna Vidhya Mandir School, we believe in providing a comprehensive educational experience that goes beyond textbooks and classrooms. Our dedicated team of educators is committed to fostering a nurturing learning environment where students feel inspired to explore, innovate, and excel in all aspects of their academic journey.
-</p>
-
-<div className='relative h-full  pt-[50px]' >
-
-<Swiper
-         effect={'coverflow'}
-         
-         grabCursor={true}
-         centeredSlides={true}
-         autoplay={{
-            delay: 1700,
-            disableOnInteraction: false,
-          }}
-          slidesPerView={'3'}
-         spaceBetween={50} 
-           loop={true}
-     
-         pagination={true}
-        //  navigation={true} 
-         modules={[  EffectCoverflow, Pagination]}
-        className="w-full h-full"
-        >
-         <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full' src={Library1} />
-        </SwiperSlide>
-        <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full'  src={Library2} />
-        </SwiperSlide>
-        <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full'  src={bus} />
-        </SwiperSlide>
-        <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full'  src={canteen} />
-        </SwiperSlide>
-        <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full'  src={Lab1} />
-        </SwiperSlide>
-        <SwiperSlide className='w-300 h-300 bg-center bg-cover'>
-          <img className='block w-full'  src={Lab2} />
-        </SwiperSlide>
-        
-        
-        
-      </Swiper>
-</div>
-
-<div className='pt-12 mx-auto'>
-
-<div className='relative h-[200px] ml-[-80px] w-[1690px]  bg-blue-950'>
-      <div className='absolute flex flex-col items-center justify-center text-4xl text-white font-bold ml-[440px] mt-[50px]'>
-      The focus must always be in learning.
-      <span className="pt-4" style={{ display: 'block', width: '50%' }}></span>
- The fundamental tool for that is collaboration.
-        </div>
-</div>
-
-{/* our vision */}
-<div className='w-full h-[650px]   flex flex-row pt-20'>
-<div className='flex-col relative top-14 max-h-[400px] '>
-      <span className='text-blue-800 font-bold text-4xl'>Our Vision</span>
-      <div className="h-[3px] w-[80px] bg-blue-800  ml-[230px] mt-[-18px]"></div>
-      <p className='flex-col text-black text-xl  w-[400px] font-bold pt-12 '>Our vision is to cultivate a vibrant learning community where every student is inspired to reach their fullest potential. We envision a school where creativity, critical thinking, and collaboration are nurtured, empowering our students to become lifelong learners and compassionate leaders in a rapidly changing world.</p>
-
-        </div>
-
-      
-          <div className='flex relative left-[650px] '>
-          <img className=' h-[500px] rounded-lg py-2' src={Lab1} alt="" />
+    <div className=' mx-auto container'>
+        <div className="bg-gray-100 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Antarikshya School</h2>
+          <p className="text-gray-600 mb-4">New Baneshwor, kathmandu</p>
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8152529835517!2d85.31909031430198!3d27.698599982828823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a9598a1d2b%3A0xa9c8b8e7d2e046d8!2sAntarikshya%20School!5e0!3m2!1sen!2snp!4v1683102678190!5m2!1sen!2snp"
+              width="100%"
+              height="600"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg"
+            ></iframe>
           </div>
         </div>
-
-
-
-       {/* our mission */}
-       
-       <div className='w-full h-[650px] flex flex-row pt-20'>
-
-       <div className='flex-col relative  top-14 max-h-[400px] ml-[-20px] '>
-          <img className=' h-[500px] rounded-lg py-2' src={Lab2} alt="" />
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
           </div>
-
-          <div className='flex relative left-[650px] mt-[150px]'>
-  <span className='text-blue-800 font-bold text-4xl'>Our Mission</span>
-  <div className="h-[5px] w-[80px] bg-blue-800  ml-[-330px] mt-4"></div>
-  <p className='flex-col text-black text-xl  w-[400px] font-bold pt-20'>Our mission is to provide a transformative educational experience that prepares students to excel academically, embrace diversity, and contribute positively to their communities and the world.
-
-We are committed to fostering a dynamic learning environment where innovation, inquiry, and critical thinking are encouraged.</p>
-</div>
-
-
-
-
-
-
-       </div>
-
-
-       
-
-      
-      
-
-
-
-
-
+          <div className="mb-4">
+            <label htmlFor="phone" className="block text-gray-700 font-semibold mb-2">
+              Phone number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows="4"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md"
+          >
+            Send Message
+          </button>
+        </div>
       </div>
+      <div className="max-w-8xl  mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex justify-center space-x-6">
+        <div className="flex items-center text-gray-600">
+          <svg
+            className="w-8 h-8 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <span>antarikshya@school.edu</span>
+        </div>
+        <div className="flex items-center text-gray-600">
+          <svg
+            className="w-8 h-8 mr-2 "
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+          <span>contact@antarikshya.edu</span>
+        </div>
+        <div className="flex items-center text-gray-600">
+          <svg
+            className="w-8 h-8 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <span>+977-1-4780000</span>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
